@@ -1,0 +1,46 @@
+ #
+ # Copyright (C) Shanquan Tian, CASLAB @ Yale
+ # Authors: Shanquan Tian <shanquan.tian@yale.edu>
+ #
+ # This program is free software; you can redistribute it and/or modify
+ # it under the terms of the GNU General Public License as published by
+ # the Free Software Foundation; either version 3 of the License, or
+ # (at your option) any later version.
+ #
+ # This program is distributed in the hope that it will be useful,
+ # but WITHOUT ANY WARRANTY; without even the implied warranty of
+ # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ # GNU General Public License for more details.
+ #
+ # You should have received a copy of the GNU General Public License
+ # along with this program; if not, write to the Free Software Foundation,
+ # Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301  USA
+ #
+
+
+set_global_assignment -name SOURCE_TCL_SCRIPT_FILE Project.tcl
+set_global_assignment -name TOP_LEVEL_ENTITY Shell
+set_global_assignment -name LAST_QUARTUS_VERSION "15.1.1 SP1.03"
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+
+
+# RO sensor placement
+
+set_global_assignment -name LL_ENABLED ON -section_id Heater
+set_global_assignment -name LL_AUTO_SIZE OFF -section_id Heater
+set_global_assignment -name LL_STATE LOCKED -section_id Heater
+set_global_assignment -name LL_RESERVED OFF -section_id Heater
+set_global_assignment -name LL_CORE_ONLY OFF -section_id Heater
+set_global_assignment -name LL_SECURITY_ROUTING_INTERFACE OFF -section_id Heater
+set_global_assignment -name LL_IGNORE_IO_BANK_SECURITY_CONSTRAINT OFF -section_id Heater
+set_global_assignment -name LL_PR_REGION OFF -section_id Heater
+set_global_assignment -name LL_ROUTING_REGION_EXPANSION_SIZE 2147483647 -section_id Heater
+set_global_assignment -name LL_WIDTH 72 -section_id Heater
+set_global_assignment -name LL_HEIGHT 72 -section_id Heater
+set_global_assignment -name LL_ORIGIN X102_Y16 -section_id Heater
+set_instance_assignment -name LL_MEMBER_OF Heater -to "Role:Role|SimpleRole:simplerole|top:top_test|Heater:heater_inst" -section_id Heater
+
+
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

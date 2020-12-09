@@ -1,0 +1,74 @@
+ #
+ # Copyright (C) Shanquan Tian, CASLAB @ Yale
+ # Authors: Shanquan Tian <shanquan.tian@yale.edu>
+ #
+ # This program is free software; you can redistribute it and/or modify
+ # it under the terms of the GNU General Public License as published by
+ # the Free Software Foundation; either version 3 of the License, or
+ # (at your option) any later version.
+ #
+ # This program is distributed in the hope that it will be useful,
+ # but WITHOUT ANY WARRANTY; without even the implied warranty of
+ # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ # GNU General Public License for more details.
+ #
+ # You should have received a copy of the GNU General Public License
+ # along with this program; if not, write to the Free Software Foundation,
+ # Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301  USA
+ #
+
+
+
+set_global_assignment -name SOURCE_TCL_SCRIPT_FILE Project.tcl
+set_global_assignment -name TOP_LEVEL_ENTITY Shell
+set_global_assignment -name LAST_QUARTUS_VERSION "15.1.1 SP1.03"
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+
+
+# RO sensor placement
+
+set_location_assignment MLABCELL_X6_Y102_N0 -to "Role:Role|SimpleRole:simplerole|top:top_test|ro:ro_sensor_0|w[0]"
+set_location_assignment MLABCELL_X6_Y101_N0 -to "Role:Role|SimpleRole:simplerole|top:top_test|ro:ro_sensor_0|w[1]"
+set_location_assignment LABCELL_X7_Y101_N0 -to "Role:Role|SimpleRole:simplerole|top:top_test|ro:ro_sensor_0|w[2]"
+set_location_assignment LABCELL_X7_Y102_N0 -to "Role:Role|SimpleRole:simplerole|top:top_test|ro:ro_sensor_0|w[3]"
+
+set_location_assignment LABCELL_X194_Y102_N0 -to "Role:Role|SimpleRole:simplerole|top:top_test|ro:ro_sensor_1|w[0]"
+set_location_assignment LABCELL_X194_Y101_N0 -to "Role:Role|SimpleRole:simplerole|top:top_test|ro:ro_sensor_1|w[1]"
+set_location_assignment MLABCELL_X195_Y101_N0 -to "Role:Role|SimpleRole:simplerole|top:top_test|ro:ro_sensor_1|w[2]"
+set_location_assignment MLABCELL_X195_Y102_N0 -to "Role:Role|SimpleRole:simplerole|top:top_test|ro:ro_sensor_1|w[3]"
+
+set_location_assignment MLABCELL_X6_Y4_N0 -to "Role:Role|SimpleRole:simplerole|top:top_test|ro:ro_sensor_2|w[0]"
+set_location_assignment MLABCELL_X6_Y3_N0 -to "Role:Role|SimpleRole:simplerole|top:top_test|ro:ro_sensor_2|w[1]"
+set_location_assignment LABCELL_X7_Y3_N0 -to "Role:Role|SimpleRole:simplerole|top:top_test|ro:ro_sensor_2|w[2]"
+set_location_assignment LABCELL_X7_Y4_N0 -to "Role:Role|SimpleRole:simplerole|top:top_test|ro:ro_sensor_2|w[3]"
+
+set_location_assignment LABCELL_X194_Y4_N0 -to "Role:Role|SimpleRole:simplerole|top:top_test|ro:ro_sensor_3|w[0]"
+set_location_assignment LABCELL_X194_Y3_N0 -to "Role:Role|SimpleRole:simplerole|top:top_test|ro:ro_sensor_3|w[1]"
+set_location_assignment MLABCELL_X195_Y3_N0 -to "Role:Role|SimpleRole:simplerole|top:top_test|ro:ro_sensor_3|w[2]"
+set_location_assignment MLABCELL_X195_Y4_N0 -to "Role:Role|SimpleRole:simplerole|top:top_test|ro:ro_sensor_3|w[3]"
+
+set_location_assignment LABCELL_X64_Y76_N0 -to "Role:Role|SimpleRole:simplerole|top:top_test|ro:ro_sensor_4|w[0]"
+set_location_assignment LABCELL_X64_Y75_N0 -to "Role:Role|SimpleRole:simplerole|top:top_test|ro:ro_sensor_4|w[1]"
+set_location_assignment MLABCELL_X65_Y75_N0 -to "Role:Role|SimpleRole:simplerole|top:top_test|ro:ro_sensor_4|w[2]"
+set_location_assignment MLABCELL_X65_Y76_N0 -to "Role:Role|SimpleRole:simplerole|top:top_test|ro:ro_sensor_4|w[3]"
+
+set_location_assignment LABCELL_X64_Y36_N0 -to "Role:Role|SimpleRole:simplerole|top:top_test|ro:ro_sensor_5|w[0]"
+set_location_assignment LABCELL_X64_Y35_N0 -to "Role:Role|SimpleRole:simplerole|top:top_test|ro:ro_sensor_5|w[1]"
+set_location_assignment MLABCELL_X65_Y35_N0 -to "Role:Role|SimpleRole:simplerole|top:top_test|ro:ro_sensor_5|w[2]"
+set_location_assignment MLABCELL_X65_Y36_N0 -to "Role:Role|SimpleRole:simplerole|top:top_test|ro:ro_sensor_5|w[3]"
+
+set_location_assignment LABCELL_X128_Y36_N0 -to "Role:Role|SimpleRole:simplerole|top:top_test|ro:ro_sensor_6|w[0]"
+set_location_assignment LABCELL_X128_Y35_N0 -to "Role:Role|SimpleRole:simplerole|top:top_test|ro:ro_sensor_6|w[1]"
+set_location_assignment MLABCELL_X129_Y35_N0 -to "Role:Role|SimpleRole:simplerole|top:top_test|ro:ro_sensor_6|w[2]"
+set_location_assignment MLABCELL_X129_Y36_N0 -to "Role:Role|SimpleRole:simplerole|top:top_test|ro:ro_sensor_6|w[3]"
+
+set_location_assignment LABCELL_X128_Y76_N0 -to "Role:Role|SimpleRole:simplerole|top:top_test|ro:ro_sensor_7|w[0]"
+set_location_assignment LABCELL_X128_Y75_N0 -to "Role:Role|SimpleRole:simplerole|top:top_test|ro:ro_sensor_7|w[1]"
+set_location_assignment MLABCELL_X129_Y75_N0 -to "Role:Role|SimpleRole:simplerole|top:top_test|ro:ro_sensor_7|w[2]"
+set_location_assignment MLABCELL_X129_Y76_N0 -to "Role:Role|SimpleRole:simplerole|top:top_test|ro:ro_sensor_7|w[3]"
+
+
+
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

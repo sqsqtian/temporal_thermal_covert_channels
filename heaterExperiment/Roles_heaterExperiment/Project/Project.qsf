@@ -1,0 +1,72 @@
+set_global_assignment -name SOURCE_TCL_SCRIPT_FILE Project.tcl
+set_global_assignment -name TOP_LEVEL_ENTITY Shell
+set_global_assignment -name LAST_QUARTUS_VERSION "15.1.1 SP1.03"
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+
+
+# RO sensor placement
+
+
+
+set_location_assignment LABCELL_X124_Y92_N0 -to "Role:Role|SimpleRole:simplerole|top:top_test|ro:ro_sensor_0|w[0]"
+set_location_assignment LABCELL_X124_Y91_N0 -to "Role:Role|SimpleRole:simplerole|top:top_test|ro:ro_sensor_0|w[1]"
+set_location_assignment MLABCELL_X125_Y91_N0 -to "Role:Role|SimpleRole:simplerole|top:top_test|ro:ro_sensor_0|w[2]"
+set_location_assignment MLABCELL_X125_Y92_N0 -to "Role:Role|SimpleRole:simplerole|top:top_test|ro:ro_sensor_0|w[3]"
+
+set_location_assignment MLABCELL_X153_Y92_N0 -to "Role:Role|SimpleRole:simplerole|top:top_test|ro:ro_sensor_1|w[0]"
+set_location_assignment MLABCELL_X153_Y91_N0 -to "Role:Role|SimpleRole:simplerole|top:top_test|ro:ro_sensor_1|w[1]"
+set_location_assignment LABCELL_X154_Y91_N0 -to "Role:Role|SimpleRole:simplerole|top:top_test|ro:ro_sensor_1|w[2]"
+set_location_assignment LABCELL_X154_Y92_N0 -to "Role:Role|SimpleRole:simplerole|top:top_test|ro:ro_sensor_1|w[3]"
+
+set_location_assignment MLABCELL_X178_Y62_N0 -to "Role:Role|SimpleRole:simplerole|top:top_test|ro:ro_sensor_2|w[0]"
+set_location_assignment MLABCELL_X178_Y61_N0 -to "Role:Role|SimpleRole:simplerole|top:top_test|ro:ro_sensor_2|w[1]"
+set_location_assignment LABCELL_X179_Y61_N0 -to "Role:Role|SimpleRole:simplerole|top:top_test|ro:ro_sensor_2|w[2]"
+set_location_assignment LABCELL_X179_Y62_N0 -to "Role:Role|SimpleRole:simplerole|top:top_test|ro:ro_sensor_2|w[3]"
+
+set_location_assignment MLABCELL_X178_Y42_N0 -to "Role:Role|SimpleRole:simplerole|top:top_test|ro:ro_sensor_3|w[0]"
+set_location_assignment MLABCELL_X178_Y41_N0 -to "Role:Role|SimpleRole:simplerole|top:top_test|ro:ro_sensor_3|w[1]"
+set_location_assignment LABCELL_X179_Y41_N0 -to "Role:Role|SimpleRole:simplerole|top:top_test|ro:ro_sensor_3|w[2]"
+set_location_assignment LABCELL_X179_Y42_N0 -to "Role:Role|SimpleRole:simplerole|top:top_test|ro:ro_sensor_3|w[3]"
+
+set_location_assignment LABCELL_X126_Y10_N0 -to "Role:Role|SimpleRole:simplerole|top:top_test|ro:ro_sensor_4|w[0]"
+set_location_assignment LABCELL_X126_Y9_N0 -to "Role:Role|SimpleRole:simplerole|top:top_test|ro:ro_sensor_4|w[1]"
+set_location_assignment MLABCELL_X127_Y9_N0 -to "Role:Role|SimpleRole:simplerole|top:top_test|ro:ro_sensor_4|w[2]"
+set_location_assignment MLABCELL_X127_Y10_N0 -to "Role:Role|SimpleRole:simplerole|top:top_test|ro:ro_sensor_4|w[3]"
+
+set_location_assignment LABCELL_X150_Y10_N0 -to "Role:Role|SimpleRole:simplerole|top:top_test|ro:ro_sensor_5|w[0]"
+set_location_assignment LABCELL_X150_Y9_N0 -to "Role:Role|SimpleRole:simplerole|top:top_test|ro:ro_sensor_5|w[1]"
+set_location_assignment MLABCELL_X151_Y9_N0 -to "Role:Role|SimpleRole:simplerole|top:top_test|ro:ro_sensor_5|w[2]"
+set_location_assignment MLABCELL_X151_Y10_N0 -to "Role:Role|SimpleRole:simplerole|top:top_test|ro:ro_sensor_5|w[3]"
+
+set_location_assignment MLABCELL_X90_Y68_N0 -to "Role:Role|SimpleRole:simplerole|top:top_test|ro:ro_sensor_6|w[0]"
+set_location_assignment MLABCELL_X90_Y67_N0 -to "Role:Role|SimpleRole:simplerole|top:top_test|ro:ro_sensor_6|w[1]"
+set_location_assignment LABCELL_X91_Y67_N0 -to "Role:Role|SimpleRole:simplerole|top:top_test|ro:ro_sensor_6|w[2]"
+set_location_assignment LABCELL_X91_Y68_N0 -to "Role:Role|SimpleRole:simplerole|top:top_test|ro:ro_sensor_6|w[3]"
+
+set_location_assignment MLABCELL_X90_Y48_N0 -to "Role:Role|SimpleRole:simplerole|top:top_test|ro:ro_sensor_7|w[0]"
+set_location_assignment MLABCELL_X90_Y47_N0 -to "Role:Role|SimpleRole:simplerole|top:top_test|ro:ro_sensor_7|w[1]"
+set_location_assignment LABCELL_X91_Y47_N0 -to "Role:Role|SimpleRole:simplerole|top:top_test|ro:ro_sensor_7|w[2]"
+set_location_assignment LABCELL_X91_Y48_N0 -to "Role:Role|SimpleRole:simplerole|top:top_test|ro:ro_sensor_7|w[3]"
+
+
+
+
+
+set_global_assignment -name LL_ENABLED ON -section_id Heater
+set_global_assignment -name LL_AUTO_SIZE OFF -section_id Heater
+set_global_assignment -name LL_STATE LOCKED -section_id Heater
+set_global_assignment -name LL_RESERVED OFF -section_id Heater
+set_global_assignment -name LL_CORE_ONLY OFF -section_id Heater
+set_global_assignment -name LL_SECURITY_ROUTING_INTERFACE OFF -section_id Heater
+set_global_assignment -name LL_IGNORE_IO_BANK_SECURITY_CONSTRAINT OFF -section_id Heater
+set_global_assignment -name LL_PR_REGION OFF -section_id Heater
+set_global_assignment -name LL_ROUTING_REGION_EXPANSION_SIZE 2147483647 -section_id Heater
+set_global_assignment -name LL_WIDTH 72 -section_id Heater
+set_global_assignment -name LL_HEIGHT 72 -section_id Heater
+set_global_assignment -name LL_ORIGIN X102_Y16 -section_id Heater
+set_instance_assignment -name LL_MEMBER_OF Heater -to "Role:Role|SimpleRole:simplerole|top:top_test|Heater:heater_inst" -section_id Heater
+
+
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
